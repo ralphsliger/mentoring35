@@ -7,3 +7,12 @@
 .idea/sonarlint/issuestore/e/a/ea3d82eba0d3ead41a6cf41b81f6ffc13f326c3e
 .idea/sonarlint/issuestore/index.pb
 .idea/vcs.xml
+target/classes/application.properties
+target/classes/co/com/sofka/mentoring35/Mentoring35Application.class
+target/classes/co/com/sofka/mentoring35/MongoConfig.class
+target/classes/co/com/sofka/mentoring35/Random.class
+target/classes/co/com/sofka/mentoring35/RandomController.class
+target/classes/co/com/sofka/mentoring35/RandomRepository.class
+target/classes/co/com/sofka/mentoring35/RequestDTO.class
+target/classes/co/com/sofka/mentoring35/RequestNumbersDTO.class
+target/test-classes/co/com/sofka/mentoring35/Mentoring35ApplicationTests.class

@@ -37,4 +37,4 @@ const rootReducer = combineReducers({
     view, random
 })
 
-export default rootReducer
+export default rootReducer;

@@ -1,10 +1,10 @@
-
+const URL_BASE = 'http://localhost:8080';
 
 export const fetchRandom = (state) => (dispatch) => {
 
     dispatch({ type: "view-loading" });
 
-    return fetch(`http://localhost:8080/r`, {
+    return fetch(`${URL_BASE}/r`, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         headers: {
             'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ export const fetchRandomNumber = (state) => (dispatch) => {
 
     dispatch({ type: "view-loading" });
 
-    return fetch(`http://localhost:8080/r/n`, {
+    return fetch(`${URL_BASE}/r/n`, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         headers: {
             'Content-Type': 'application/json'
@@ -33,3 +33,4 @@ export const fetchRandomNumber = (state) => (dispatch) => {
             dispatch({ type: "view-loaded" });
         })
 }
+
