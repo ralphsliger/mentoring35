@@ -1,4 +1,5 @@
-const URL_BASE = 'http://localhost:8080';
+//const URL_BASE = 'http://localhost:8080';
+const URL_BASE = 'https://app-random-numbers.herokuapp.com'
 
 export const fetchRandom = (state) => (dispatch) => {
 
