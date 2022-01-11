@@ -17,5 +17,19 @@ export const fetchRandom = (state) => (dispatch) => {
         })
 }
 
+export const fetchRandomNumber = (state) => (dispatch) => {
 
-//TODO: agregar las demas acciones
+    dispatch({ type: "view-loading" });
+
+    return fetch(`http://localhost:8080/r/n`, {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({number1: state.number1, number2: state.number2}) // body data type must match "Content-Type" header
+    }).then(response => response.json())
+        .then(json => {
+            dispatch({ type: "random-result", data: json });
+            dispatch({ type: "view-loaded" });
+        })
+}
